@@ -1,0 +1,16 @@
+*{
+    margin:  0px 0px ;
+    padding: 0px 0px;
+    /* background-color: black;
+    color: wheat; */
+}
+.navbar{
+    background: transparent !important;
+    border: 2px solid rgba(255, 255, 255, .2) !important ;
+    backdrop-filter: blur(9px) !important;
+    color: #000000 !important;
+}
+.navbar-brand {
+    color: rgb(0, 0, 0);
+    
+}
