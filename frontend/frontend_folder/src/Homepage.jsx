@@ -28,8 +28,8 @@ export const Homepage = ({ children }) => {
       options
     );
     const data = await fetchdata.json();
-    console.log(data.msg);
-    console.log(data.users);
+    // console.log(data.msg);
+    // console.log(data.users);
 
     if (!fetchdata.ok) {
       if (fetchdata.status === 422) {
@@ -47,7 +47,7 @@ export const Homepage = ({ children }) => {
     try {
       const users = data.users;
       users.map((users, index) => {
-        console.log(index, users.name);
+        // console.log(index, users.name);
       });
     } catch {
       navigate("/app");

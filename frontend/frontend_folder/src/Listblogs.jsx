@@ -29,7 +29,7 @@ function Listblogs() {
       const data = await response.json();
       setUpload_blogs(data.blogs);
     } else {
-      console.error("Failed to fetch blogs");
+      // console.error("Failed to fetch blogs");
     }
   };
 
@@ -62,9 +62,9 @@ function Listblogs() {
         } else if (response.status === 200) {
           alert(`${data.msg}`);
           // alert(`${`);
-          console.log(200);
+          // console.log(200);
         } else if (response.status === 500) {
-          console.log(500);
+          // console.log(500);
           alert(`${data.msg}`);
         } else {
           alert("Please login again, your session has ended");
@@ -102,12 +102,12 @@ function Listblogs() {
         alert("you are not the author!");
       } else if (response.status === 200) {
         alert(`${data.msg}`);
-        console.log("200");
+        // console.log("200");
       } else if (response.status === 500) {
-        console.log("500");
+        // console.log("500");
         alert(`${data.msg}`);
       } else if (response.status === 422) {
-        console.log("500");
+        // console.log("500");
         // alert(`${data.msg}`);
       } else {
         delete_sessionstorage();

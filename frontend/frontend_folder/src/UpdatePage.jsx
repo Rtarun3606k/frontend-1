@@ -35,9 +35,9 @@ function UpdatePage() {
     );
     const data = await response.json();
     if (!response.ok) {
-      console.log("some error occurred");
+      // console.log("some error occurred");
     } else {
-      console.log(data.msg);
+      // console.log(data.msg);
       // Optionally, navigate to another page after successful update
       navigate(`/`);
       alert("updated sucessfully");
@@ -58,7 +58,7 @@ function UpdatePage() {
       setLoading(false);
       //   navigate("/");
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       setLoading(false);
     }
   };

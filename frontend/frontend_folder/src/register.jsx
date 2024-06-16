@@ -30,12 +30,12 @@ function Register() {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       const data = await response.json(); // Parsing the JSON response
-      console.log(data);
+      // console.log(data);
       sessionStorage.setItem("token", data.access_token);
       sessionToken = data.access_token;
       navigate("/home"); // Using the navigate function correctly
     } catch (error) {
-      console.error("Fetch error: ", error);
+      // console.error("Fetch error: ", error);
     }
     setPassword("");
     setRetypePassword("");

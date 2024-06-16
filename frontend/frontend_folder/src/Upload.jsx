@@ -10,9 +10,9 @@ function Upload() {
   const navigate = useNavigate();
   const submit = async (e) => {
     e.preventDefault();
-    console.log("working");
-    console.log(blogdata);
-    console.log(blogtitle);
+    // console.log("working");
+    // console.log(blogdata);
+    // console.log(blogtitle);
     const options = {
       method: "POST",
       headers: {
@@ -31,9 +31,9 @@ function Upload() {
       options
     );
     const data = await response.json();
-    console.log("coustume alert", data.msg, response.status);
+    // console.log("coustume alert", data.msg, response.status);
 
-    console.log("in catch");
+    // console.log("in catch");
     setblogdata("");
     setblogtitle("");
     if (!response.ok) {

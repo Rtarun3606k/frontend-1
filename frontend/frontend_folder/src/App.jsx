@@ -25,7 +25,7 @@ function Register() {
         "https://test-flask-backend-lime.vercel.app/token",
         options
       );
-      console.log("status code", response.status);
+      // console.log("status code", response.status);
       if (!response.ok) {
         if (response.status === 401) {
           alert("Invalid username or password");
@@ -36,14 +36,14 @@ function Register() {
         }
       } else {
         const data = await response.json(); // Parsing the JSON response
-        console.log(data);
+        // console.log(data);
         sessionStorage.setItem("token", data.access_token);
         sessionStorage.setItem("username", Username);
         sessionToken = data.access_token;
         navigate("/");
       } // Using the navigate function correctly
     } catch (error) {
-      console.error("Fetch error: ", error);
+      // console.error("Fetch error: ", error);
     }
     setPassword("");
 
@@ -61,10 +61,10 @@ function Register() {
         options
       );
       const userData = await response.json();
-      console.log(userData);
+      // console.log(userData);
       // Now you can use userData.name and userData.password as needed
     } catch (error) {
-      console.error("Fetch error:", error);
+      // console.error("Fetch error:", error);
     }
   };
   return (

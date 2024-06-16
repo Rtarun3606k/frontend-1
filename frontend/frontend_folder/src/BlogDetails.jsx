@@ -24,7 +24,7 @@ const BlogDetails = () => {
       setBlog(data.blog);
       setLoading(false);
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       setLoading(false);
     }
   };
