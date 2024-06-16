@@ -3,6 +3,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { delete_sessionstorage } from "./utils";
 
 export const Navbar = () => {
   const navigate = useNavigate();
