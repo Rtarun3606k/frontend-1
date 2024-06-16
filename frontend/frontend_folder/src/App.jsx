@@ -117,7 +117,6 @@ function Register() {
                 </p>
               </div>
             </form>
-            <button onClick={fetchUserData}>click </button>
           </div>
         </div>
       )}
